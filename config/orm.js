@@ -54,7 +54,7 @@ function printQuestionMarks(num) {
       queryString += cols.toString();
       queryString += ") ";
       queryString += "VALUES (";
-      queryString += printQuestionMarks(vals.length);
+      queryString += vals.toString();
       queryString += ") ";
   
       console.log(queryString);
@@ -86,8 +86,6 @@ function printQuestionMarks(num) {
       });
     },
   };
-
-
-
+  
 // Exporting the orm object
 module.exports = orm;
