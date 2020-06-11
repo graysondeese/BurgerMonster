@@ -34,9 +34,7 @@ function printQuestionMarks(num) {
   }
 // =======================================
   // Object for all our SQL statement functions.
-//   selectAll()
-// insertOne()
-// updateOne()
+
   var orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
@@ -54,7 +52,7 @@ function printQuestionMarks(num) {
       queryString += cols.toString();
       queryString += ") ";
       queryString += "VALUES (";
-      queryString += vals.toString();
+      queryString += printQuestionMarks(vals.length);
       queryString += ") ";
   
       console.log(queryString);
@@ -86,6 +84,6 @@ function printQuestionMarks(num) {
       });
     },
   };
-  
+
 // Exporting the orm object
 module.exports = orm;
