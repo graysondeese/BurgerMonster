@@ -12,5 +12,5 @@ To install necessary dependencies, run the following command:
 <a href="http://quiet-chamber-56591.herokuapp.com/">Burger Eater</a>
 ***
 # Screenshot
-<img src="/public/assets/img/Capture.png">
+<img src="public/assets/img/Capture.png"> </img>
 
