@@ -12,5 +12,5 @@ To install necessary dependencies, run the following command:
 <a href="#">Burger Eater</a>
 ***
 # Screenshot
-<img src="public/assets/img/Capture.png">
+<img src="/assets/img/Capture.png">
 
