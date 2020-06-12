@@ -1,45 +1,45 @@
 <header>
-  <img src="/assets/img/burger.jpg" width="250" height="250" class="burgerPic"/>
+  <img src="/assets/img/burger.jpg" width="250" height="250" class="burgerPic" />
 </header>
-<h1>Burgers!</h1>
+
 
 <div class="newBurgers">
   <h2>Burgers ready to eat!!</h2>
   <ul>
-  {{#each burgers}}
-  {{#unless devoured}}
-  <li>
-    <p>{{burger_name}}</p>
-    <button class="change-devoured" data-id="{{id}}" data-devour="{{devoured}}">DEVOUR !!!</button>
-    <hr>
-  </li>
-  {{/unless}}
-  {{/each}}
-</ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li>
+      <p>{{burger_name}}</p>
+      <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">Devour!!!</button>
+      <hr>
+    </li>
+    {{/unless}}
+    {{/each}}
+  </ul>
 </div>
 
 
 <div class="devouredBurgers">
-<h2>Devoured Burgers!</h2>
-<ul>
-  {{#each burgers}}
-  {{#if devoured}}
-  <li>
-    <p>{{burger_name}}</p>
-  </li>
-  {{/if}}
-  {{/each}}
-</ul>
+  <h2>Devoured Burgers!</h2>
+  <ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li>
+      <p>{{burger_name}}</p>
+    </li>
+    {{/if}}
+    {{/each}}
+  </ul>
 </div>
 
 <div class="addBurger">
-<h2>Add a Burger</h2>
-<form class="create-form">
+  <h2>Add a Burger</h2>
+  <form class="create-form">
 
-  <div class="form-group">
-    <label for="bu">Burger Name:</label>
-    <input type="text" id="bu" name="burger_name">
-  </div>
-  <button type="submit">Add Burger</button>
-</form>
+    <div class="form-group">
+      <label for="bu">Burger Name:</label>
+      <input type="text" id="bu" name="burger_name">
+    </div>
+    <button type="submit">Add Burger</button>
+  </form>
 </div>

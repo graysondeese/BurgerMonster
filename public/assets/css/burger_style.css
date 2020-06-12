@@ -1,24 +1,63 @@
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 li {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
+    width: 80%;
   }
-  
   .label {
     font-weight: bold;
   }
-  
   .create-update-form {
     padding: 5px;
     margin: 5px;
     background: aqua;
   }
-  
   .form-group {
     margin-bottom: 5px;
   }
-
+button {
+  margin: 10px;
+}
   body {
     background-color: #66ff66;
   }
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 30px;
+    border: 30px;
+    margin: 30px;
+  }
+ul {
+  width: 100%;
+  list-style: none;
+}
+.newBurgers {
+  float: left;
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 25%;
+}
+.addBurger {
+  background-color: #d3d3d3;
+  float: left;
+  padding: 10px;
+  margin: 20px;
+}
+.devouredBurgers {
+  float: left;
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin: 20px;
+  margin-right: 25%;
+}
+
   
