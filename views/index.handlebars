@@ -1,28 +1,38 @@
 <header>
-  <img src="/assets/img/burger.jpg" width="250" height="250" />
+  <img src="/assets/img/burger.jpg" width="250" height="250" class="burgerPic"/>
 </header>
 <h1>Burgers!</h1>
 
-<h2>Burgers ready to eat!!</h2>
-
-<ul>
+<div class="newBurgers">
+  <h2>Burgers ready to eat!!</h2>
+  <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burger-block devoured=true}}
+  <li>
+    <p>{{burger_name}}</p>
+    <button class="change-devoured" data-id="{{id}}" data-devour="{{devoured}}">DEVOUR !!!</button>
+    <hr>
+  </li>
   {{/unless}}
   {{/each}}
 </ul>
+</div>
 
+
+<div class="devouredBurgers">
 <h2>Devoured Burgers!</h2>
-
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{> burgers/burger-block devoured=false}}
+  <li>
+    <p>{{burger_name}}</p>
+  </li>
   {{/if}}
   {{/each}}
 </ul>
+</div>
 
+<div class="addBurger">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -32,3 +42,4 @@
   </div>
   <button type="submit">Add Burger</button>
 </form>
+</div>
