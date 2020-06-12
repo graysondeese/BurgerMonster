@@ -1,26 +1,16 @@
 # Burger
 ***
-Application that allows user to create and "eat" burgers using MySQL, Node, Express and Handlebars.
+Application that allows user to create and "eat" burgers using MySQL, Node, Express and Handlebars. User can type in the name of a burger and then click the "Add Burger" button. The user can eat the burger by clicking the "Devour!!!" button.
 ***
-# Table of Contents
-* [Installation](#Installation "Goto Installation")
-* [Usage](#Usage "Goto Usage")
-* [License](#License "Goto License")
-* [Contributing](#Contributing "Goto Contributing")
-* [Tests](#Tests "Goto Tests")
-* [Questions](#Questions "Goto Questions")
-
 # Installation
+***
 To install necessary dependencies, run the following command:
-npm i
-# Usage
-nothing
-# License
-This project is licensed under the MIT license.
-# Contributing
-nothing
-# Tests
-npm test
-# Questions
-* github username: graysondeese
-* email: gldeese@ncsu.edu
+` npm i `
+***
+# Deployed Application
+***
+<a href="#">Burger Eater</a>
+***
+# Screenshot
+<img src="public/assets/img/Capture.png"> </img>
+
