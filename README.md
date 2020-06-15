@@ -9,7 +9,7 @@ To install necessary dependencies, run the following command:
 ***
 # Deployed Application
 ***
-<a href="http://quiet-chamber-56591.herokuapp.com/">Burger Eater</a>
+<a href="http://quiet-chamber-56591.herokuapp.com/" target="_blank">Burger Eater</a>
 ***
 # Screenshot
 ***
